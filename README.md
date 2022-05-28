@@ -4,8 +4,8 @@
 
 ## Build image
 
-    docker build -t crucial-peak-rtmp-server .
+    docker build -t crucial-peek-rtmp-server .
 
 ## Run container
 
-    docker run -it -d -p 1935:1935 --name local-crucial-peek crucial-peak-rtmp-server
+    docker run -it -d -p 1935:1935 --name local-crucial-peek crucial-peek-rtmp-server
