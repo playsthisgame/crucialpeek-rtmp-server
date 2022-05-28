@@ -1,9 +1,11 @@
-# NGINX RTMP Server Config
+# Crucial Peek NGINX RTMP Server Config
 
-## Config location
+ Creates a docker container that runs NGINX with the RTMP module installed and the config specific for Crucial Peek.
 
-    /etc/nginx
+## Build image
 
-## Restart NGINX
+    docker build -t crucial-peak-rtmp-server .
 
-    systemctl restart nginx
+## Run container
+
+    docker run -it -d -p 1935:1935 --name local-crucial-peek crucial-peak-rtmp-server

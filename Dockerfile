@@ -23,7 +23,11 @@ RUN mkdir /var/log/nginx && \
     rm /usr/local/nginx/conf/nginx.conf
 COPY conf /usr/local/nginx/conf
 
+#copy startup script
+COPY ./startup.sh /
+RUN chmod +x /startup.sh
+
 # start nginx
-RUN /usr/local/nginx/sbin/nginx
+CMD /startup.sh && bash
 
 EXPOSE 1935
