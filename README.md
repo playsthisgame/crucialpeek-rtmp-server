@@ -8,4 +8,4 @@
 
 ## Run container
 
-    docker run -it -d -p 1935:1935 --name local-crucial-peek crucial-peek-rtmp-server
+    docker run -it -d -p 1935:1935 --name local-crucial-peek-rtmp-server crucial-peek-rtmp-server
